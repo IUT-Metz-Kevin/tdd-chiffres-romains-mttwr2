@@ -6,12 +6,8 @@ class RomanNumeral {
         for (let c of value) {
             if (c === "I") compteur++
         }
-
-        // if (value === "I") return 1
-        // if (value === "II") return 2
-        // if (value === "III") return 3
         if (value === "IV") return 4
-        if (value === "V") return 5
+        if (value === "V") compteur += 5
         return compteur
     }
 }
