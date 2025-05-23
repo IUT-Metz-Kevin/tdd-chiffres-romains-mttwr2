@@ -5,11 +5,13 @@ class RomanNumeral {
         if (value === "I") return 1
         if (value === "II") return 2
         if (value === "III") return 3
-        if (value === "IIII") return 4
+        if (value === "IV") return 4
         return 0
     }
 }
 
+
+// commentaire
 let chiffre = new RomanNumeral()
 
 it("Should return as much as there are 'I' ", function () {
