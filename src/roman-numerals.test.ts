@@ -6,7 +6,7 @@ class RomanNumeral {
         if (value === "II") return 2
         if (value === "III") return 3
         if (value === "IV") return 4
-        if (value === "IIIII") return 5
+        if (value === "V") return 5
         return 0
     }
 }
