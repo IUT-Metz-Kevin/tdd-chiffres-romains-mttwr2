@@ -4,8 +4,13 @@ class RomanNumeral {
     correspondance(value: string): number {
 
         const map: Record<string, number> = {
-      I: 1,
+        I: 1,
       V: 5,
+      X: 10,
+      L: 50,
+      C: 100,
+      D: 500,
+      M: 1000,
     };
     let total = 0;
 
@@ -15,7 +20,7 @@ class RomanNumeral {
 
       if (next > current) {
         total += next - current;
-        i++; // Skip next character since it's been processed
+        i++; 
       } else {
         total += current;
       }
@@ -41,4 +46,8 @@ it("Should return 4", function () {
 
 it("Should return 5", function () {
     expect(chiffre.correspondance("V")).toBe(5);
+});
+
+it("Should return 9 for 'IX'", function () {
+  expect(chiffre.correspondance("IX")).toBe(9);
 });
