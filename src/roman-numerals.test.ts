@@ -2,9 +2,8 @@ import { it, expect, test } from "vitest"; //importe les méthodes de tests néc
 
 class RomanNumeral {
     correspondance(value: string): number {
-
-        const map: Record<string, number> = {
-        I: 1,
+      const map: Record<string, number> = {
+      I: 1,
       V: 5,
       X: 10,
       L: 50,
@@ -12,6 +11,7 @@ class RomanNumeral {
       D: 500,
       M: 1000,
     };
+    
     let total = 0; //variable qui sera incrémentée 
 
     for (let i = 0; i < value.length; i++) {
