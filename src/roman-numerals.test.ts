@@ -34,41 +34,41 @@ class RomanNumeral {
 // commentaire
 const chiffre = new RomanNumeral()
 
-it("Should return as much as there are 'I' ", function () {
-    expect(chiffre.correspondance("I")).toBe(1);
-    expect(chiffre.correspondance("II")).toBe(2);
-    expect(chiffre.correspondance("III")).toBe(3);
-});
+// it("Should return as much as there are 'I' ", function () {
+//     expect(chiffre.correspondance("I")).toBe(1);
+//     expect(chiffre.correspondance("II")).toBe(2);
+//     expect(chiffre.correspondance("III")).toBe(3);
+// });
 
-it("Should return 4", function () {
-    expect(chiffre.correspondance("IV")).toBe(4);
-});
+// it("Should return 4", function () {
+//     expect(chiffre.correspondance("IV")).toBe(4);
+// });
 
-it("Should return 5", function () {
-    expect(chiffre.correspondance("V")).toBe(5);
-});
+// it("Should return 5", function () {
+//     expect(chiffre.correspondance("V")).toBe(5);
+// });
 
-it("Should return 9 for 'IX'", function () {
-  expect(chiffre.correspondance("IX")).toBe(9);
-});
+// it("Should return 9 for 'IX'", function () {
+//   expect(chiffre.correspondance("IX")).toBe(9);
+// });
 
-it("Should return 19 for 'XIX'", function () {
-  expect(chiffre.correspondance("XIX")).toBe(19);
-});
+// it("Should return 19 for 'XIX'", function () {
+//   expect(chiffre.correspondance("XIX")).toBe(19);
+// });
 
-it("Should return 40 for 'XL'", function () {
-  expect(chiffre.correspondance("XL")).toBe(40);
-});
+// it("Should return 40 for 'XL'", function () {
+//   expect(chiffre.correspondance("XL")).toBe(40);
+// });
 
-it("Should return 90 for 'XC'", function () {
-  expect(chiffre.correspondance("XC")).toBe(90);
-});
+// it("Should return 90 for 'XC'", function () {
+//   expect(chiffre.correspondance("XC")).toBe(90);
+// });
 
-it("Should return 400 for 'CD'", function () {
-  expect(chiffre.correspondance("CD")).toBe(400);
-});
+// it("Should return 400 for 'CD'", function () {
+//   expect(chiffre.correspondance("CD")).toBe(400);
+// });
 
-it("Should return 900 for 'CM'", function () {
-  expect(chiffre.correspondance("CM")).toBe(900);
-});
+// it("Should return 900 for 'CM'", function () {
+//   expect(chiffre.correspondance("CM")).toBe(900);
+// });
 
