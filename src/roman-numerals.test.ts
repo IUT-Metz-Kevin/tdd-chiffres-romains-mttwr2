@@ -51,3 +51,19 @@ it("Should return 5", function () {
 it("Should return 9 for 'IX'", function () {
   expect(chiffre.correspondance("IX")).toBe(9);
 });
+
+it("Should return 40 for 'XL'", function () {
+  expect(chiffre.correspondance("XL")).toBe(40);
+});
+
+it("Should return 90 for 'XC'", function () {
+  expect(chiffre.correspondance("XC")).toBe(90);
+});
+
+it("Should return 400 for 'CD'", function () {
+  expect(chiffre.correspondance("CD")).toBe(400);
+});
+
+it("Should return 900 for 'CM'", function () {
+  expect(chiffre.correspondance("CM")).toBe(900);
+});
