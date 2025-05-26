@@ -5,7 +5,7 @@ class NumeralRoman {
         if (value === 1) return "I"
         if (value === 2) return "II"
         if (value === 3) return "III"
-        if (value === 4) return "IIII"
+        if (value === 4) return "IV"
         return ""
     }
 }
