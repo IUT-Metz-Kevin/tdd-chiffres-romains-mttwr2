@@ -12,17 +12,17 @@ class RomanNumeral {
       D: 500,
       M: 1000,
     };
-    let total = 0;
+    let total = 0; //variable qui sera incrémentée 
 
     for (let i = 0; i < value.length; i++) {
       const current = map[value[i]];
-      const next = map[value[i + 1]];
+      const next = map[value[i + 1]]; 
 
       if (next > current) {
-        total += next - current;
+        total += next - current; // principe numéral romain : si le chiffre suivant est + grand, on soustrait
         i++; 
       } else {
-        total += current;
+        total += current; // sinon, on additionne
       }
     }
 
@@ -52,6 +52,10 @@ it("Should return 9 for 'IX'", function () {
   expect(chiffre.correspondance("IX")).toBe(9);
 });
 
+it("Should return 19 for 'XIX'", function () {
+  expect(chiffre.correspondance("XIX")).toBe(19);
+});
+
 it("Should return 40 for 'XL'", function () {
   expect(chiffre.correspondance("XL")).toBe(40);
 });
@@ -67,3 +71,4 @@ it("Should return 400 for 'CD'", function () {
 it("Should return 900 for 'CM'", function () {
   expect(chiffre.correspondance("CM")).toBe(900);
 });
+
