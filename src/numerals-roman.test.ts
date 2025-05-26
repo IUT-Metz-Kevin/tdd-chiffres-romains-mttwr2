@@ -4,6 +4,7 @@ class NumeralRoman {
     correspondance(value: number): string {
         if (value === 1) return "I"
         if (value === 2) return "II"
+        if (value === 3) return "III"
 
         return ""
     }
@@ -14,4 +15,5 @@ const Roman = new NumeralRoman()
 it("Should return as much I as the value", function () {
     expect(Roman.correspondance(1)).toBe("I");
     expect(Roman.correspondance(2)).toBe("II");
+    expect(Roman.correspondance(3)).toBe("III");
 });
