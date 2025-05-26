@@ -2,19 +2,32 @@ import { it, expect, test } from "vitest"; //importe les méthodes de tests néc
 
 class RomanNumeral {
     correspondance(value: string): number {
-        let compteur = 0
-        for (let c of value) {
-            if (c === "I") compteur++
-        }
-        if (value === "IV") return 4
-        if (value === "V") compteur += 5
-        return compteur
+
+        const map: Record<string, number> = {
+      I: 1,
+      V: 5,
+    };
+    let total = 0;
+
+    for (let i = 0; i < value.length; i++) {
+      const current = map[value[i]];
+      const next = map[value[i + 1]];
+
+      if (next > current) {
+        total += next - current;
+        i++; // Skip next character since it's been processed
+      } else {
+        total += current;
+      }
+    }
+
+    return total;
+
     }
 }
 
-
 // commentaire
-let chiffre = new RomanNumeral()
+const chiffre = new RomanNumeral()
 
 it("Should return as much as there are 'I' ", function () {
     expect(chiffre.correspondance("I")).toBe(1);
