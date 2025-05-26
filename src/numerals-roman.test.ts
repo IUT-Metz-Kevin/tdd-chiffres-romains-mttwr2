@@ -29,6 +29,8 @@ it("Should return as much I as the value", function () {
     expect(Roman.correspondance(1)).toBe("I");
     expect(Roman.correspondance(2)).toBe("II");
     expect(Roman.correspondance(3)).toBe("III");
-    // expect(Roman.correspondance(4)).toBe("IV");
-    // expect(Roman.correspondance(5)).toBe("V");
+});
+
+it("should return IV when given 4", function () {
+    expect(Roman.correspondance(4)).toBe("IV");
 });
